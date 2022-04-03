@@ -64,7 +64,29 @@ python main.py --train-flag True --cuda-device-no 0 --imsize 1024  --train-conte
 xxx means that you need to scramble the data of the target domain in the BlenderCityspace dataset into a folder, and xxx is the location of the folder. yyy is an optional source domain image, here you may need some luck to select a suitable image, or you can directly use our pre-trained domain transfer model to directly train Faster R-CNN.
 
 ### 7.2 Training Faster R-CNN
+Before training, in order to facilitate you to visualize the whole training process, please execute the following command to start visdom to observe the loss function and the change of mAP during the whole training process.
+```Bash
+python -m visdom.server
+```
+![visdom](./md_image/visdom.jpg)
 
+Then execute the following command to train Faster R-CNN.
+
+```Bash
+python train.py train --env='env1' --plot-every=40 --caffe-pretrain=False
+```
+
+## 8. Citation
+If you find this work useful in your research, please consider citing:
+
+```
+@inproceedings{Multi-Target-Domain-Adaptative-Detector,
+  title={MULTI-TARGET DOMAIN TRANSFER DETECTOR ON BAD WEATHER CONDITIONS},
+  author={Chonghuan Liu, Ruizhi Liu, Zhuo Su*, Fan Zhou},
+  booktitle={ICME},
+  year={2022}
+}
+```
 
 
 
