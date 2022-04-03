@@ -46,7 +46,7 @@ Before running the code, please make sure the following dependencies are install
 * visdom
 
 ## 6. Demo
-If you want, you can first download our pre-trained model, which includes the pre-trained model of the domain transfer module and the pre-trained model of Faster R-CNN. The download link is: xxxx, the password is:
+If you want, you can first download our pre-trained model, which includes the pre-trained model of the domain transfer module and the pre-trained model of Faster R-CNN. The download link is: https://pan.baidu.com/s/1-wQyIyIe9b3lgPK1G20z1g, the password is:8qt3 .
 
 To execute the demo command:
 ```Bash
